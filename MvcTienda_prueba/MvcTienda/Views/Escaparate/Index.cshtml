@@ -1,0 +1,85 @@
+﻿@model IEnumerable<MvcTienda.Models.Producto>
+
+@{
+    ViewData["Title"] = "Escaparate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    
+    
+</head>
+ 
+    <h1 style="text-align: center">Escaparate</h1>
+    <h4>Categorías</h4>
+@* Categorias *@
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+
+        @foreach (var i in ViewData["ListaCategorias"] as IEnumerable<Categoria>)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Index" asp-route-id="@i.Id">@i.Descripcion.ToString()</a>
+                </td>
+            </tr>
+        }
+    </div>
+</nav>
+
+
+    <div class="container-fluid" >
+   
+        @* Tarjetas de productos *@
+        <div class="col-lg-12 col-md-12 col-sm-12" style=" background-color: #1f1f1f">
+        <div class="row" style="margin:100px">
+            @foreach (var item in Model)
+             {
+              
+                        <div class="card" style="width:240px; height:490px; text-align:center; margin: 10px;">
+                           <div>
+                            @{
+                            string Imagen = "ImagenDefault.jpg";
+                            if (item.Imagen != null)
+                            {
+                                Imagen = item.Imagen;
+                            }
+                            } 
+                            <img class="card-img-top" style="width:150px; height:150px; margin: 10px;" src="~/imagenes/@Imagen" alt="No funciona" asp-append-version="true" />
+                            </div>
+
+
+                        <div class="card-body" style="height: auto;">
+                            <p class="card-text" style="height:50px;">@Html.DisplayFor(modelItem => item.Descripcion)</p>
+                            <h2>@Html.DisplayFor(modelItem => item.Precio) €</h2>
+                            <br/>
+                            <p>Unidades disponibles: @Html.DisplayFor(modelItem => item.Stock)</p> 
+                            <div class="card-footer">
+                                <form asp-action="Dummy">
+                                    <input type="hidden" name="id" value="@item.Id" />
+                                    @if (item.Stock <= 0)
+                                    {
+                                        <button type="button" class="btn btn-danger btn-disabled"><i class='bi-cart-plus'></i> AGOTADO</button>
+                                    }
+                                    else
+                                    {
+                                    <button type="submit" class="btn btn-success" onclick="agregarAlCarrito()"><i class='bi-cart-plus'></i> AGREGAR AL CARRITO</button>
+                                    }<script>
+                                        function agregarAlCarrito() {
+
+                                            alert("😁");
+                                        }
+                                    </script>
+                                    <a asp-action="AnyadirCarrito" type="submit" asp-route-id="@item.Id" class="btn btn-warning" style="margin-top:10px;"><i class='bi-cart-plus'></i> Detalles</a>
+                                </form>
+                            </div>
+                        </div>
+                           
+                        
+                    </div>
+                    
+               
+             }
+        </div>
+    </div>
+    </div>
+</div>

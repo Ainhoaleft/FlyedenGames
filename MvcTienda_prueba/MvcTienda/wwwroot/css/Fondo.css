@@ -1,0 +1,11 @@
+﻿.gradiante{
+    background-image: linear-gradient(to right, #e53935, #000000);
+    background-color: #fff;
+    background-size: cover;
+}
+
+.pie {
+    background-image: linear-gradient(to left, #e53935, #000000);
+    background-color: #000000;
+    background-size: cover;
+}
