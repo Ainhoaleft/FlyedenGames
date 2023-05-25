@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\2DAW\\servidor\\SupuestoPractico\\MvcTienda_Prueba\\MvcTienda\\MvcTienda.csproj": {}
+    "F:\\MvcTienda_prueba\\MvcTienda\\MvcTienda.csproj": {}
   },
   "projects": {
-    "F:\\2DAW\\servidor\\SupuestoPractico\\MvcTienda_Prueba\\MvcTienda\\MvcTienda.csproj": {
+    "F:\\MvcTienda_prueba\\MvcTienda\\MvcTienda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\2DAW\\servidor\\SupuestoPractico\\MvcTienda_Prueba\\MvcTienda\\MvcTienda.csproj",
+        "projectUniqueName": "F:\\MvcTienda_prueba\\MvcTienda\\MvcTienda.csproj",
         "projectName": "MvcTienda",
-        "projectPath": "F:\\2DAW\\servidor\\SupuestoPractico\\MvcTienda_Prueba\\MvcTienda\\MvcTienda.csproj",
+        "projectPath": "F:\\MvcTienda_prueba\\MvcTienda\\MvcTienda.csproj",
         "packagesPath": "C:\\Users\\aizqu\\.nuget\\packages\\",
-        "outputPath": "F:\\2DAW\\servidor\\SupuestoPractico\\MvcTienda_Prueba\\MvcTienda\\obj\\",
+        "outputPath": "F:\\MvcTienda_prueba\\MvcTienda\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

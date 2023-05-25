@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I7g1afjW7GKL28oe9P3KEVGQKEzpWZnhv3vfho39LxGPc9VxQPmTJrEuhByikH4EouI0YqsczmylrCt1YHQX2A==",
+  "dgSpecHash": "KlAw3Q2XWPNC5wLVmmQ3+bpoNQUstBkZcbphaSgCo0hCLyn+RrItpsMcmi6EG2rMwhRZoBblY098Bycp4OsL+g==",
   "success": true,
-  "projectFilePath": "F:\\2DAW\\servidor\\SupuestoPractico\\MvcTienda_Prueba\\MvcTienda\\MvcTienda.csproj",
+  "projectFilePath": "F:\\MvcTienda_prueba\\MvcTienda\\MvcTienda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aizqu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\aizqu\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

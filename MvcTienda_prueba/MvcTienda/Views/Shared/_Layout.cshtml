@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/MvcTienda.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/Fondo.css" />
+    <link rel="stylesheet" href="~/css/color.css" />
+   
 
    
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 gradiante">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 cabecera">
             <div class="container-fluid">
                
                 <img src="~/imagenes/logo.png" alt="logo" width="500" height="100">
@@ -47,6 +48,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-white" asp-area=""
                                        asp-controller="MisPedidos" asp-action="Index">Mis pedidos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Escaparate" asp-action="Index">Escaparate</a>
                                 </li>
                             }
                             @if (User.IsInRole("Administrador"))
@@ -94,7 +98,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted pie">
+    <footer class="border-top footer text-muted redes">
         <div class="container">
             &copy; 2023 - Flyeden Games - <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de privacidad</a>
         </div>

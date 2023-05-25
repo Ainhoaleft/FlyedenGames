@@ -1,0 +1,9 @@
+﻿.cabecera {
+    background: rgb(75,13,4);
+    background: linear-gradient(90deg, rgba(75,13,4,1) 0%, rgba(158,20,34,1) 33%, rgba(152,21,39,1) 65%, rgba(140,14,1,1) 100%);
+}
+
+.redes {
+    background: rgb(75,13,4);
+    background: linear-gradient(90deg, rgba(75,13,4,1) 0%, rgba(158,20,34,1) 33%, rgba(152,21,39,1) 65%, rgba(140,14,1,1) 100%);
+}

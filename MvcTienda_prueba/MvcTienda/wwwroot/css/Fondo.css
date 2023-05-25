@@ -1,11 +1,9 @@
-﻿.gradiante{
-    background-image: linear-gradient(to right, #e53935, #000000);
-    background-color: #fff;
-    background-size: cover;
+﻿.gradiante {
+    background: rgb(185,33,13);
+    background: linear-gradient(90deg, rgba(185,33,13,1) 0%, rgba(247,64,83,1) 33%, rgba(244,87,109,1) 65%, rgba(140,14,1,1) 100%);
 }
 
 .pie {
-    background-image: linear-gradient(to left, #e53935, #000000);
-    background-color: #000000;
-    background-size: cover;
+    background: rgb(185,33,13);
+    background: linear-gradient(90deg, rgba(185,33,13,1) 0%, rgba(247,64,83,1) 33%, rgba(244,87,109,1) 65%, rgba(140,14,1,1) 100%);
 }

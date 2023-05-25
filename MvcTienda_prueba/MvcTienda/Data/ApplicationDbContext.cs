@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MvcTienda.Controllers;
 
 namespace MvcTienda.Data
 {
@@ -9,5 +10,7 @@ namespace MvcTienda.Data
             : base(options)
         {
         }
+
+        //public DbSet<UsuariosController> Users { get; set; }
     }
 }

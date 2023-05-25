@@ -15,15 +15,15 @@ namespace MvcTienda.Data
         public DbSet<Estado>? Estados { get; set; }
         public DbSet<Pedido>? Pedidos { get; set; }
         public DbSet<Detalle>? Detalles { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            // Deshabilitar la eliminación en cascada en todas las relaciones
-            base.OnModelCreating(modelBuilder);
-            foreach (var relationship in
-            modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
-            {
-                relationship.DeleteBehavior = DeleteBehavior.Restrict;
-            }
-        }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    // Deshabilitar la eliminación en cascada en todas las relaciones
+        //    base.OnModelCreating(modelBuilder);
+        //    foreach (var relationship in
+        //    modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+        //    {
+        //        relationship.DeleteBehavior = DeleteBehavior.Restrict;
+        //    }
+        //}
     }
 }
