@@ -49,7 +49,7 @@ namespace MvcTienda.Areas.Identity.Pages.Account.Manage
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [StringLength(100, ErrorMessage = "El {0} debe tener un mínimo de {2} y un máximo de {1} caracteres..", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "New password")]
             public string NewPassword { get; set; }
@@ -60,7 +60,7 @@ namespace MvcTienda.Areas.Identity.Pages.Account.Manage
             /// </summary>
             [DataType(DataType.Password)]
             [Display(Name = "Confirm new password")]
-            [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
+            [Compare("NewPassword", ErrorMessage = "La nueva contraseña y la contraseña de confirmación no coinciden.")]
             public string ConfirmPassword { get; set; }
         }
 
@@ -69,7 +69,7 @@ namespace MvcTienda.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound($"No se puede cargar el usuario con ID '{_userManager.GetUserId(User)}'.");
             }
 
             var hasPassword = await _userManager.HasPasswordAsync(user);
@@ -92,7 +92,7 @@ namespace MvcTienda.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound($"No se puede cargar el usuario con ID '{_userManager.GetUserId(User)}'.");
             }
 
             var addPasswordResult = await _userManager.AddPasswordAsync(user, Input.NewPassword);
@@ -106,7 +106,7 @@ namespace MvcTienda.Areas.Identity.Pages.Account.Manage
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your password has been set.";
+            StatusMessage = "Se ha establecido su contraseña.";
 
             return RedirectToPage();
         }

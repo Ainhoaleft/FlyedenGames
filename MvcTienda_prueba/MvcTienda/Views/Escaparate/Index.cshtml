@@ -19,7 +19,7 @@
         {
             <tr>
                 <td>
-                    <a asp-action="Index" asp-route-id="@i.Id">@i.Descripcion.ToString()</a>
+                    <a asp-action="Index" asp-route-id="@i.Id" style="text-decoration: none;">@i.Descripcion.ToString()</a>
                 </td>
             </tr>
         }
@@ -35,7 +35,7 @@
             @foreach (var item in Model)
              {
               
-                        <div class="card" style="width:240px; height:490px; text-align:center; margin: 10px;">
+                        <div class="card" style="width:300px; height:490px; text-align:center; margin: 10px;">
                            <div>
                             @{
                             string Imagen = "ImagenDefault.jpg";
